@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <h1>Day-4 (Loops)</h1>
+
+
+
+    <script>
+        // Activity 1
+        // Task-1: print 1 to 10 numbers
+        for (let i = 1; i <= 10; i++) {
+            console.log('Printing 1 to 10 numbers =', i)
+        }
+
+        // Task-2: print table of 5
+        let tnum = 5;
+        for (let i = 1; i <= 10; i++) {
+            console.log("Multiplication table of 5 =", tnum * i);
+        }
+
+        // Activity 2
+        // Task-3: print sum of 1 to 10 numbers      
+        let sum = 0;
+        let i = 1;
+        while (i <= 10) {
+            sum += i;
+            i++
+            console.log(sum)
+        }
+
+        // Task-4: print sum of 10 to 1 numbers 
+        let subt = 10, index = 9;
+        while (index >= 1) {
+            subt = subt - index
+            index--
+            console.log(subt)
+        }
+
+        // Activity 3
+        // Task-5: print 1 to 5 number using do while loop
+        let digit = 1;
+        do {
+            console.log("Print 1 to 5 number =", digit)
+            digit++
+        } while (digit <= 5);
+
+        // Task-6: calculate the factorial of a number
+        let fdigit = 10, itret = 9
+        do {
+            console.log(fdigit)
+            fdigit *= itret
+            itret--
+        } while (itret >= 1);
+
+        // Activity 4
+        // Task-7: print x pattern using nested for loop
+        for (let i = 0; i <= 0; i++) {
+            let star = "";
+            for (let j = 0; j <= 10; j++){
+                star = star + "x "
+                console.log(star)
+            }
+        }
+
+        // Activity 5
+        // Task-8: print 1 to 10 but skip number 5 using the continue statement
+        for (i = 1; i <= 10; i++){
+            if(i == 5){
+                continue;
+            }
+            console.log("Skip 5 using continnue statement =", i)
+        }
+        
+        // Task-9
+        for (i = 1; i <= 10; i++){
+            if(i == 8){
+                break;
+            }
+            console.log("Stop loop when count reached 7 =", i)
+        }
+        
+
+    </script>
+</body>
+
+</html>
